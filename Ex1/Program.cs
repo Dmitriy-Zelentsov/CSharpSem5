@@ -38,8 +38,9 @@ int FindNegativeSum(int [] arr)
     }
     return sum;
 }
-int [] array = CreateArray(12, -9, 9);
+int [] array = CreateArray(5, -9, 9);
 PrintArray(array);
+Console.WriteLine ();
 Console.WriteLine($"Сумма полож элементов равна {FindPositiveSum(array)}");
 Console.WriteLine($"Сумма отр элементов равна {FindNegativeSum(array)}");
 

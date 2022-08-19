@@ -22,17 +22,19 @@ void PrintArray(int[]array)
 }
 void FindNumber(int [] array)
 {
-    int num = Int32.Parse(Console.ReadLine());
+    int num = Convert.ToInt32(Console.ReadLine());
     for (int i = 0; i < array.Length; i++)
     {
-        if(array[i] == num)5
-            Console.WriteLine("да");
-         Console.WriteLine("нет"); 
-         
+        if(array[i] == num)
+        {
+             Console.WriteLine("да");
+             return;
+        }
     }
-
+    Console.WriteLine("нет");
 }
 int [] array = CreateArray(7, 3, 5);
 PrintArray(array);
 Console.WriteLine();
 FindNumber(array);
+
